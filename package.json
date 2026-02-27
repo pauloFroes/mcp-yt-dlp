@@ -1,0 +1,35 @@
+{
+  "name": "@paulofroes/mcp-yt-dlp",
+  "version": "1.0.0",
+  "description": "MCP server wrapping yt-dlp for video/audio downloads from URLs",
+  "type": "module",
+  "bin": {
+    "mcp-yt-dlp": "build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["mcp", "yt-dlp", "youtube", "download", "video", "audio", "claude"],
+  "author": "Paulo Froes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulofroes/mcp-yt-dlp.git"
+  },
+  "homepage": "https://github.com/paulofroes/mcp-yt-dlp#readme",
+  "bugs": {
+    "url": "https://github.com/paulofroes/mcp-yt-dlp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.1",
+    "typescript": "^5.9.3"
+  }
+}
